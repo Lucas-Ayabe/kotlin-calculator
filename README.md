@@ -65,7 +65,7 @@ Result: 15
 com.lucas.ktcalculator
 │
 ├── domain
-│   ├── Calculator.kt       # Define as operações matemáticas básicas
+│   ├── Calculator.kt       # Abstrai a interface entre uma Expression e as operações matemáticas configuradas
 │   └── Expression.kt       # Encapsula os dados de uma operação
 │
 ├── ui
