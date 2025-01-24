@@ -17,12 +17,12 @@ Embora pareça simples, o projeto demonstra o uso de arquiteturas modernas para 
 ## **Conceitos e Decisões de Design**
 ### **1. Organização em Camadas**
 O projeto foi estruturado em pacotes que respeitam o princípio de separação de responsabilidades:
-- **`domain` **:
+- `domain`:
   Contém a lógica central (ou núcleo da aplicação). Os principais componentes incluem:
     - `Calculator`: Responsável por executar operações matemáticas de maneira genérica, baseada em um mapeamento de operadores.
     - `Expression`: Uma classe que encapsula os operadores e operandos de uma operação.
 
-- **`ui` **:
+- `ui`:
   Implementa os adaptadores de interface. É dividida em:
     - **`ui` (abstrações gerais):**
         - `Report`: Representa o estado final de um formulário preenchido, oferecendo uma API fluent baseada no encapsulamento e message chaining para acessar campos em diferentes representações (`asInt()`, `asString()`, etc.).
